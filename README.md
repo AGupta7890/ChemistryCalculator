@@ -1,1 +1,2 @@
 # ChemistryCalculator
+By Aditya Gupta
