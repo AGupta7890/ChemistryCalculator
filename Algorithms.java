@@ -178,22 +178,22 @@ public class Algorithms {
 	}
 	
 	public String getBondAngles() {
-		if (bondType.getERegions() == 2 && (firstNumber + secondNumber - 1) == 1) return "The bond angles are: 180°.\n";
-		if (bondType.getERegions() == 2 && (firstNumber + secondNumber - 1) == 2) return "The bond angles are: 180°.\n";
-    	if (bondType.getERegions() == 3 && (firstNumber + secondNumber - 1) == 3) return "The bond angles are: 120°.\n";
-    	if (bondType.getERegions() == 3 && (firstNumber + secondNumber - 1) == 2) return "The bond angles are: <120°.\n";
-    	if (bondType.getERegions() == 4 && (firstNumber + secondNumber - 1) == 4) return "The bond angles are: 109°.\n";
-    	if (bondType.getERegions() == 4 && (firstNumber + secondNumber - 1) == 3) return "The bond angles are: <109°.\n";
-    	if (bondType.getERegions() == 4 && (firstNumber + secondNumber - 1) == 2) return "The bond angles are: <<109°.\n";
-    	if (bondType.getERegions() == 5 && (firstNumber + secondNumber - 1) == 5) return "The bond angles are: 120° between equatorial, 90° between axial.\n";
-    	if (bondType.getERegions() == 5 && (firstNumber + secondNumber - 1) == 4) return "The bond angles are: <120° between equatorial, <90° between axial.\n";
-    	if (bondType.getERegions() == 5 && (firstNumber + secondNumber - 1) == 3) return "The bond angles are: <90° between axial.\n";
-    	if (bondType.getERegions() == 5 && (firstNumber + secondNumber - 1) == 2) return "The bond angles are: 180°.\n";
-    	if (bondType.getERegions() == 6 && (firstNumber + secondNumber - 1) == 6) return "The bond angles are: 90°.\n";
-    	if (bondType.getERegions() == 6 && (firstNumber + secondNumber - 1) == 5) return "The bond angles are: <90° equatorial and axial.\n";
-    	if (bondType.getERegions() == 6 && (firstNumber + secondNumber - 1) == 4) return "The bond angles are: 90°.\n";
-    	if (bondType.getERegions() == 6 && (firstNumber + secondNumber - 1) == 3) return "The bond angles are: <90°.\n";
-    	if (bondType.getERegions() == 6 && (firstNumber + secondNumber - 1) == 2) return "The bond angles are: 180°.\n";
+		if (bondType.getERegions() == 2 && (firstNumber + secondNumber - 1) == 1) return "The bond angles are: 180Â°.\n";
+		if (bondType.getERegions() == 2 && (firstNumber + secondNumber - 1) == 2) return "The bond angles are: 180Â°.\n";
+    	if (bondType.getERegions() == 3 && (firstNumber + secondNumber - 1) == 3) return "The bond angles are: 120Â°.\n";
+    	if (bondType.getERegions() == 3 && (firstNumber + secondNumber - 1) == 2) return "The bond angles are: <120Â°.\n";
+    	if (bondType.getERegions() == 4 && (firstNumber + secondNumber - 1) == 4) return "The bond angles are: 109Â°.\n";
+    	if (bondType.getERegions() == 4 && (firstNumber + secondNumber - 1) == 3) return "The bond angles are: <109Â°.\n";
+    	if (bondType.getERegions() == 4 && (firstNumber + secondNumber - 1) == 2) return "The bond angles are: <<109Â°.\n";
+    	if (bondType.getERegions() == 5 && (firstNumber + secondNumber - 1) == 5) return "The bond angles are: 120Â° between equatorial, 90Â° between axial.\n";
+    	if (bondType.getERegions() == 5 && (firstNumber + secondNumber - 1) == 4) return "The bond angles are: <120Â° between equatorial, <90Â° between axial.\n";
+    	if (bondType.getERegions() == 5 && (firstNumber + secondNumber - 1) == 3) return "The bond angles are: <90Â° between axial.\n";
+    	if (bondType.getERegions() == 5 && (firstNumber + secondNumber - 1) == 2) return "The bond angles are: 180Â°.\n";
+    	if (bondType.getERegions() == 6 && (firstNumber + secondNumber - 1) == 6) return "The bond angles are: 90Â°.\n";
+    	if (bondType.getERegions() == 6 && (firstNumber + secondNumber - 1) == 5) return "The bond angles are: <90Â° equatorial and axial.\n";
+    	if (bondType.getERegions() == 6 && (firstNumber + secondNumber - 1) == 4) return "The bond angles are: 90Â°.\n";
+    	if (bondType.getERegions() == 6 && (firstNumber + secondNumber - 1) == 3) return "The bond angles are: <90Â°.\n";
+    	if (bondType.getERegions() == 6 && (firstNumber + secondNumber - 1) == 2) return "The bond angles are: 180Â°.\n";
     	else return "Not a binary compound or incorrect format; please input accepted compounds.";
 	}
 	
@@ -248,10 +248,6 @@ public class Algorithms {
 				+ "This compound is a covalent compound.\n"
 		        + bondType.toString() + "\n"
 		        + getBondPolarityCovalent() +"\n\n---------------------------------------------\n\n";
-		       // + getHBDInfo() + "\n\n";
-		// getMolecularPolarityCovalent() + "\n" +
-		// getIntermolecularForces()
-		// ;
 	}
 	
     public String getHBDInfo() {
@@ -265,7 +261,6 @@ public class Algorithms {
     }
     
 	public String getBasicInfo() {
-		//System.out.println(firstElement + " " + secondElement);
 		return map.get(firstElement).toString() + " \n\n" + map.get(secondElement).toString() + "\n\n---------------------------------------------\n\n";
 	}
 
