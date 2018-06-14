@@ -27,7 +27,6 @@ public class BondTypeCovalent {
 		
 		this.firstElement = firstElement;
 		this.secondElement = secondElement;
-		//this.secondPoly = compound.getSecondPoly();
 		this.firstNumber = firstNumber;
 		this.secondNumber = secondNumber;
 		
@@ -69,9 +68,7 @@ public class BondTypeCovalent {
 		// # LONE PAIRS
 		if ((fullShellOne/firstNumber)-(valenceOne/firstNumber) > (fullShellTwo/secondNumber)-(valenceTwo/secondNumber)){
 		 this.lonePairElmtOne = (fullShellOne/2/firstNumber) - (firstNumber + secondNumber -1); // 0
-		// if ((fullShellOne - valenceOne) - ) return "Error!";
 		 this.lonePairElmtTwo = (fullShellTwo/2/secondNumber) - (bondingPairs - (firstNumber + secondNumber -1) / secondNumber); // 3
-		// if (lonePairs / secondNumber != lonePairElmtTwo ) return "Error!";
 		}
 		else {
 		  this.lonePairElmtOne = (fullShellOne/2/firstNumber) - (bondingPairs - (firstNumber + secondNumber -1)/ firstNumber);
@@ -82,13 +79,6 @@ public class BondTypeCovalent {
 		} else {
 		this.eRegions = ((fullShellOne/firstNumber)-(valenceOne/firstNumber) > (fullShellTwo/secondNumber)-(valenceTwo/secondNumber)) ? 
 				lonePairElmtOne + (firstNumber + secondNumber - 1) : lonePairElmtTwo + (firstNumber + secondNumber - 1); //CENTRAL HBD
-
-		/*"Full Shell of " + firstElement + " is: " + fullShellOne + "Full Shell of " + secondElement + " is: "
-				+ fullShellTwo + " \nNumber of Valence Electrons in " + firstElement + " is: " + valenceOne 
-				+ " \nNumber of Valence Electrons in " + secondElement + " is: " + valenceTwo 
-				+ "\nNumber of lone pairs in " + firstElement + " is: " + Integer.toString(lonePairElmtOne) 
-				+ "\nNumber of lone pairs in " + secondElement + " is: " + Integer.toString(lonePairElmtTwo);
-	*/
 		}
 	}
 
