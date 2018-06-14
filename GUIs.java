@@ -42,7 +42,6 @@ public class GUIs extends JFrame {
 
 	GUIs() {}
 	public void start() {
-	//JFrame alpha = new JFrame();
     setTitle("Aditya Gupta's Chemistry Database and Calculator of Simple Binary Compounds");
 	setSize(1920/2, 1080/2);
 	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -50,9 +49,6 @@ public class GUIs extends JFrame {
 	
 	buildInputPanel();
 	add(panel, BorderLayout.NORTH);
-	//add(namePanel, BorderLayout.NORTH);
-	//add(namePanel2, BorderLayout.NORTH);
-	//add(namePanel3, BorderLayout.NORTH);
 	add(panelLeft, BorderLayout.WEST);
 	add(panelCenter, BorderLayout.CENTER);
 	add(panelRight, BorderLayout.EAST);
@@ -91,10 +87,6 @@ public class GUIs extends JFrame {
     textArea2.setLineWrap(false);
     textArea3.setLineWrap(false);
     
-    //outputBasicInfo.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-    //outputSpecificInfo.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-    //outputHBD.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-    
 	outputBasicInfo = new JScrollPane(textArea);
 	outputSpecificInfo = new JScrollPane(textArea2);
 	outputHBD = new JScrollPane(textArea3);
@@ -106,31 +98,22 @@ public class GUIs extends JFrame {
 	inputHBDlabel = new JLabel ("Enter binary compound to find Hybridization of here \n(must be binary; only one central atom):");
 	clearButton = new JButton("Clear all text!");
 		clearButton.addActionListener(new inputButtonListener());
-	/*info = new JLabel("Welcome to my simple binary chemistry calculator! This calculator finds various informations of both the separate elements"
-			         + "\nas well as the compound itself. Make sure you only input a binary compound - if the total number of elements exceed their max"
-			         + "\nvalence shell electron pair quantity, then that means it's not a binary compound! (And of course, only two elements). When inputting"
-			         + "\nthe compound, it must be in the format Xx#Yy#. For example, NaCl, CaCl2, BF3, etc."); 
-	*/
 		
 	info = new JScrollPane(textArea4);
 		
 	panel.add(inputLabel);
 	panel.add(inputTextFieldCmpd);
 	panel.add(inputButton);
-	//panelDown.add(info);
 	
 	
 	panelLeft.add(basicLabel);
 	panelLeft.add(outputBasicInfo);
-	//outputBasicInfo.setEditable(false);
 	
 	panelCenter.add(specificLabel);
 	panelCenter.add(outputSpecificInfo);
-	//outputSpecificInfo.setEditable(false);
 	
 	panelRight.add(HBDlabel);
 	panelRight.add(outputHBD);
-	//outputHBD.setEditable(false);
 	panelDown.add(creditButton);
 	panelDown.add(info);
 	panelDown.add(clearButton);
@@ -157,13 +140,8 @@ public class GUIs extends JFrame {
 			         textArea3.append("\n\nThis compound is an ionic structure!\n\n");
 			      }
 			     else {
-			    	// if(input.length() > 2) {
 			    	 textArea2.append(alg.getCovalentInfo());
 			    	 textArea3.append(alg.getHBDInfo());
-			    	// } else {
-			    		// textArea2.append(alg.getCovalentInfo());
-			    		// textArea3.append("\n\n-/-\n\n");
-			    	//}
 			     }
 		  }
 		 
