@@ -6,8 +6,6 @@ import java.util.Map;
 import java.util.Scanner;
 public class PTable {
 	
-// SURVEY:
-// https://goo.gl/forms/vW5sl71gCuAJZaJa2
 	//Pennsylvania State University supplied periodic table
 	//https://pixabay.com/en/chemistry-icon-laboratory-science-856929/ icon
   
