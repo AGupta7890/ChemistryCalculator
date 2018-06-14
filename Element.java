@@ -10,7 +10,6 @@ public class Element {
 	String inputCompound;
 	private int capitalIndex;
 	
-	//public static final String ALPHA = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	public Element(String inputCompound) {
 		//C2H4
 		this.inputCompound = inputCompound;
