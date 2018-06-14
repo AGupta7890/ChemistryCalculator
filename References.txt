@@ -1,0 +1,29 @@
+References
+
+Barclay, K. A., & Savage, W. J. (2007). Groovy programming: An introduction for Java developers. Amsterdam: Morgan Kaufmann. Retrieved October 13, 2016, from Science Direct.
+
+Chemical bonding. (2016). In Encyclopædia Britannica. Retrieved from http://school.eb.com/levels/high/article/110108#43421.toc 
+
+Chieh, C. (n.d.). Valence Bond Theory and Hybrid Atomic Orbitals. Retrieved October 20, 2016, from http://www.science.uwaterloo.ca/~cchieh/cact/c120/hybrid.html
+
+Clancy, C., Farrow, K., Finkle, T., Francis, L., Heimbecker, B., Nixon-Ewing, B., . . . Thomas, T. (2011). Chemistry 12. Toronto, ON: McGraw-Hill Ryerson.
+
+Gaddis, T. (2013). Starting out with Java: From control structures through objects(5th ed.). Upper Saddle River, NJ: Pearson Education International.
+
+Hybridization of Atomic Orbitals. (n.d.) Retrieved December 18th, 2016, from http://butane.chem.uiuc.edu/cyerkes/Chem102AEFa07/Lecture_Notes_102/Lecture%2015'-102.htm
+
+Klawonn, F. (2012). Introduction to Computer Graphics-Using Java 2D and 3D. London: Springer Verlag. Retrieved October 13, 2016, from Springer Science Business Media.
+
+Spell, B. (2015). Pro Java 8 programming (C. Darby, Ed.). Berkeley, CA: Apress. Retrieved October 13, 2016, from Springer Science Business Media.
+
+
+
+
+Icon: https://pixabay.com/en/chemistry-icon-laboratory-science-856929/
+
+Periodic Table Database from Pennsylvania State University
+
+StackOverflow.
+
+[MadProgrammer](2017, Jan. 7) Clear text from a JTextArea [Wiki-based answer] Retreived from http://stackoverflow.com/questions/17163699/clear-text-from-a-jtextarea
+
