@@ -40,9 +40,6 @@ public class PTable {
       lineInfo[i] = tableInput.nextLine();
       i++;
     }
-    //System.out.println(lineInfo[12]); //TEST
-    
-   //Map<String, Element> map = new HashMap<String, Element>();
       
    for (int n = 0; n < names.length; n++) {
 
@@ -61,67 +58,13 @@ public class PTable {
                                    holder[10].trim(), 
                                    holder[11].trim(), 
                                    holder[12].trim()));
-     
-
-     //map.put(names[0], new Element(1, "a", "a", 1.0, "a", 1.0, 1, 1, 1, "a", "a", "a", "a")); //CREATION TEST
-     //System.out.println(map.get(array[0])/*.getAtomicNumber()*/); //PRINT ELEMENT TEST     
-     //System.out.print(holder[4] + "\n"); //TEST
    }
    
    nameInput.close();
    tableInput.close();
    
-/**************************************************************************************************************************************
-  * Periodic Table Finished
-  */
-   
-/***************************************************************************
-  * TEST PRINT TOSTRING()
-  *
-   //String h = names[1];
-   //System.out.println(h);
-   System.out.println(map.get("C").toString()); //PRINT ELEMENT TEST
-   
-   //String he = names[45];
-   //System.out.println(he);
-   //System.out.println(map.get(names[symbolToArrayNumber("Pd", names)]).toString()); //PRINT ELEMENT TEST
-   //System.out.println(Arrays.toString(names));
-/**************************************************************************
-  * TEST PRINT END
-  */
-   
- /**************************************************************************************************
-  * USER INPUT
-  */
-   
-   /*
-   Scanner userInput = new Scanner(System.in);
-   System.out.println("Enter Binary Compound:");
-   String inputCompound = userInput.nextLine();
-   System.out.println("Enter which element you wish to find hybridization of:");
-   String inputHBD = userInput.nextLine();
-   Algorithms alg = new Algorithms(names, map, inputCompound, inputHBD);
-   System.out.println(alg.toString());
-   System.out.println(alg.getBasicInfo());
-   System.out.println(alg.getValenceE("Al")); */
-   
-   //TWO MAJOR GET METHODS: covalentInfo and ionicInfo, with basicInfo
-   
-   //Get covalent/ionic
-   //Get bonds
-   //Get Oxidation states
-   //Get shape
-   //Get hybridization
-   //Get bond angles
-   //Get bond polarity
-   //Get molecular polarity?
-   //Get Intermolecular Forces
-   //
-   
   GUIs gui = new GUIs();
   gui.start();
- // Element compound = new Element("Ca2Cl");
- // System.out.println(compound.getCapital() + " " + compound.getFirstElement() + " " + compound.getSecondElement() + " " + compound.getFirstNumber() + " " + compound.getSecondNumber());
  }
   
 }
