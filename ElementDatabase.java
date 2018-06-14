@@ -1,7 +1,5 @@
 package xCR;
 
-//import java.io.*;
-//import java.util.*;
 public class ElementDatabase  {
   
   private int atomicNumber;
@@ -45,10 +43,6 @@ public class ElementDatabase  {
     this.bondingType = bondingType;
     this.metalOrNot = metalOrNot;
     this.yearDiscovered = yearDiscovered;
-    
-                   /* Scanner input = new Scanner (new File ("PeriodicTableEdited.txt"));                                
-                      atomicNumber = input.nextInt();
-                      symbol = input.next();*/
                                  
   }
   //ATOMIC NUMBER INT
@@ -115,7 +109,6 @@ public class ElementDatabase  {
     	String nextNoble;
     	int i = getAtomicNumber();
     	while (!PTable.map.get(PTable.names[i-1]).getMetalOrNot().equals("noble-gas")) i++;
-    	//while (!PTable.map.get(PTable.names[i-1]).getMetalOrNot().equals("noble-gas")) i++;
     	nextNoble = PTable.names[i];
     	
     	String[] orbitals = PTable.map.get(nextNoble).getEConfig().split("-");
@@ -143,10 +136,4 @@ public class ElementDatabase  {
                        + "\nMetal Or Not?: " + metalOrNot
                        + "\nYear Discovered: " + yearDiscovered);
   }
-  
-                       /*public static void main (String[]args) {
-    
-                         PeriodicTable table = new PeriodicTable ();
-                         System.out.println(table.getAtomicNumber() + " | " + table.getSymbol()); 
-                          }*/
 }
